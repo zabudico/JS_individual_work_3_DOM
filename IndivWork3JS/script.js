@@ -1,17 +1,33 @@
-// Массив для хранения транзакций
+/**
+ * Represents a transaction.
+ * @typedef {Object} Transaction
+ * @property {string} id - The unique identifier of the transaction.
+ * @property {string} date - The date and time when the transaction occurred.
+ * @property {number} amount - The amount of the transaction. Positive for income, negative for expense.
+ * @property {string} category - The category of the transaction.
+ * @property {string} description - The description of the transaction.
+ */
+
+/**
+ * Array to store transactions.
+ * @type {Transaction[]}
+ */
 let transactions = [];
 
-// Функция добавления транзакции
+/**
+ * Adds a transaction to the transactions array.
+ * @param {Event} event - The submit event triggering the transaction addition.
+ */
 function addTransaction(event) {
-    event.preventDefault(); // Предотвращаем отправку формы и перезагрузку страницы
+    event.preventDefault(); // Prevent form submission and page reload
 
-    // Получаем значения из формы
+    // Get form input values
     const amount = parseFloat(document.getElementById('amount').value);
     const category = document.getElementById('category').value;
     const description = document.getElementById('description').value;
-    const date = new Date().toLocaleString(); // Используем текущую дату и время
+    const date = new Date().toLocaleString(); // Current date and time
 
-    // Создаем объект транзакции
+    // Create transaction object
     const transaction = {
         id: generateId(),
         date,
@@ -20,27 +36,33 @@ function addTransaction(event) {
         description
     };
 
-    // Добавляем транзакцию в массив
+    // Add transaction to the array
     transactions.push(transaction);
 
-    // Отображаем транзакцию в таблице
+    // Display transaction in the table
     displayTransaction(transaction);
 
-    // Пересчитываем общую сумму
+    // Recalculate total amount
     calculateTotal();
 
-    // Очищаем поля формы после добавления транзакции
+    // Clear form fields after adding transaction
     document.getElementById('amount').value = '';
     document.getElementById('category').value = 'food';
     document.getElementById('description').value = '';
 }
 
-// Функция генерации уникального ID для транзакции
+/**
+ * Generates a unique ID for a transaction.
+ * @returns {string} The generated unique ID.
+ */
 function generateId() {
     return '_' + Math.random().toString(36).substr(2, 9);
 }
 
-// Функция отображения транзакции в таблице
+/**
+ * Displays a transaction in the table.
+ * @param {Transaction} transaction - The transaction to display.
+ */
 function displayTransaction(transaction) {
     const tableBody = document.querySelector('#transactionTable tbody');
 
@@ -50,10 +72,10 @@ function displayTransaction(transaction) {
         <td>${transaction.date}</td>
         <td>${transaction.category}</td>
         <td>${transaction.description.split(' ').slice(0, 4).join(' ')}</td>
-         <td><button onclick="deleteTransaction('${transaction.id}')">Удалить</button></td>
+        <td><button onclick="deleteTransaction('${transaction.id}')">Удалить</button></td>
     `;
 
-    // Определяем цвет строки в зависимости от суммы
+    // Set row background color based on amount
     if (transaction.amount >= 0) {
         row.style.backgroundColor = 'lightgreen';
     } else {
@@ -63,14 +85,19 @@ function displayTransaction(transaction) {
     tableBody.appendChild(row);
 }
 
-// Функция удаления транзакции
+/**
+ * Deletes a transaction from the transactions array.
+ * @param {string} id - The ID of the transaction to delete.
+ */
 function deleteTransaction(id) {
     transactions = transactions.filter(transaction => transaction.id !== id);
     renderTransactions();
     calculateTotal();
 }
 
-// Функция отображения всех транзакций
+/**
+ * Renders all transactions in the table.
+ */
 function renderTransactions() {
     const tableBody = document.querySelector('#transactionTable tbody');
     tableBody.innerHTML = '';
@@ -80,7 +107,9 @@ function renderTransactions() {
     });
 }
 
-// Функция подсчета общей суммы транзакций
+/**
+ * Calculates the total amount of all transactions and displays it.
+ */
 function calculateTotal() {
     const totalAmount = transactions.reduce((total, transaction) => {
         return total + transaction.amount;
@@ -89,9 +118,9 @@ function calculateTotal() {
     document.getElementById('totalAmount').textContent = `Общая сумма: ${totalAmount}`;
 }
 
-// Обработчик события отправки формы
+// Event listener for form submission
 document.getElementById('transactionForm').addEventListener('submit', addTransaction);
 
-// Инициализация при загрузке страницы
+// Initialize on page load
 renderTransactions();
 calculateTotal();
