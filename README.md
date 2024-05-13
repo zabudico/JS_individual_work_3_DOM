@@ -11,13 +11,13 @@ JS interaction with a DOM-tree based web application for personal finance accoun
 2. Клонируйте репозиторий проекта.
    
 ```  
-      git clone https://github.com/<your-github-username>/
+git clone https://github.com/<your-github-username>/
 BreadcrumbsJS_individual_work_3_DOM.git
  ```
 
 3. Перейдите в каталог проекта.
 ```
-      cd IndivWork3JS
+cd IndivWork3JS
 ```
 
 4. Откройте страницу `index.html` в браузере.
