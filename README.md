@@ -88,6 +88,10 @@ cd IndivWork3JS
 
 ![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/1b6ffa90-9995-45fa-81c7-367c6e891010)
 
+![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/e1f5b729-529f-47b3-9ca1-6d4cc9da0fbb)
+
+![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/b7bffec3-3307-4c64-b2c3-c4b481b5e9c6)
+
 ## 5.Ответы на контрольные вопросы
 
 1. Какое значение возвращает функция fetch?
