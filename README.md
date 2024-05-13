@@ -133,12 +133,12 @@ cd IndivWork3JS
       Пример:
 
          ```
-            const element = document.getElementById('myElement');
-            element.textContent = 'Новый текст';
-            element.innerHTML = '<strong>Жирный текст</strong>';
+         const element = document.getElementById('myElement');
+         element.textContent = 'Новый текст';
+         element.innerHTML = '<strong>Жирный текст</strong>';
          ```
 
-5. Как можно добавить новый элемент в DOM дерево с помощью JavaScript?
+4. Как можно добавить новый элемент в DOM дерево с помощью JavaScript?
 
          Для добавления нового элемента в DOM дерево используются методы создания элементов и их добавления в существующую структуру:
 
