@@ -11,7 +11,7 @@ JS interaction with a DOM-tree based web application for personal finance accoun
 2. Клонируйте репозиторий проекта.
    
 ```  
-git clone https://github.com/zabudico/JS_individual_work_2_Asynchronous_JS.git
+git clone <URL репозитория>
 ```
 
 3. Перейдите в каталог проекта.
