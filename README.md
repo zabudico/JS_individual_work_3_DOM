@@ -118,15 +118,15 @@ cd IndivWork3JS
 
             Пример использования делегирования событий:
 
-            ```
-               document.addEventListener('click', function(event) {
+```
+   document.addEventListener('click', function(event) {
                 if (event.target && event.target.tagName === 'BUTTON') {
                     console.log('Кликнутая кнопка:', event.target);
                    }
                 });
             ```
 
-3. Как можно изменить содержимое элемента DOM с помощью JavaScript после его выборки?
+4. Как можно изменить содержимое элемента DOM с помощью JavaScript после его выборки?
 
       Изменение содержимого элемента DOM можно осуществить с помощью свойства textContent, innerHTML или других свойств элемента.
 
@@ -138,7 +138,7 @@ cd IndivWork3JS
          element.innerHTML = '<strong>Жирный текст</strong>';
          ```
 
-4. Как можно добавить новый элемент в DOM дерево с помощью JavaScript?
+5. Как можно добавить новый элемент в DOM дерево с помощью JavaScript?
 
          Для добавления нового элемента в DOM дерево используются методы создания элементов и их добавления в существующую структуру:
 
