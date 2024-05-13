@@ -98,6 +98,7 @@ cd IndivWork3JS
 
    Для доступа к элементу на веб-странице с помощью JavaScript используются методы работы с DOM (Document Object Model):
       - Использование document.getElementById(): Этот метод позволяет получить элемент по его уникальному идентификатору (id).
+        
         ```
         const element = document.getElementById('myElementId');
         ```
