@@ -135,7 +135,7 @@ cd IndivWork3JS
 ```javascript
 const element = document.getElementById('myElement');
 element.textContent = 'Новый текст';
-element.innerHTML = '<strong>Жирный текст</strong>';
+element.innerHTML = '<strong>Жирный текст</strong>'; 
 ```
 
 4. **Как можно добавить новый элемент в DOM дерево с помощью JavaScript?**
