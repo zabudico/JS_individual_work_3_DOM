@@ -126,31 +126,31 @@ cd IndivWork3JS
        }
    });
    ```
-3. Как можно изменить содержимое элемента DOM с помощью JavaScript после его выборки?
+### 3. Как можно изменить содержимое элемента DOM с помощью JavaScript после его выборки?
 
-      Изменение содержимого элемента DOM можно осуществить с помощью свойства textContent, innerHTML или других свойств элемента.
+Изменение содержимого элемента DOM можно осуществить с помощью свойства `textContent`, `innerHTML` или других свойств элемента.
 
-      Пример:
+Пример:
 
-         ```
-         const element = document.getElementById('myElement');
-         element.textContent = 'Новый текст';
-         element.innerHTML = '<strong>Жирный текст</strong>';
-         ```
+```javascript
+const element = document.getElementById('myElement');
+element.textContent = 'Новый текст';
+element.innerHTML = '<strong>Жирный текст</strong>';
+```
 
-4. Как можно добавить новый элемент в DOM дерево с помощью JavaScript?
+### 4. Как можно добавить новый элемент в DOM дерево с помощью JavaScript?
 
-      Для добавления нового элемента в DOM дерево используются методы создания элементов и их добавления в существующую структуру:
+Для добавления нового элемента в DOM дерево используются методы создания элементов и их добавления в существующую структуру.
 
-        Пример:
+Пример:
 
-         ```
-         const newElement = document.createElement('div');
-         newElement.textContent = 'Новый элемент';
+```javascript
+const newElement = document.createElement('div');
+newElement.textContent = 'Новый элемент';
 
-         const parentElement = document.getElementById('parentElement');
-         parentElement.appendChild(newElement);
-         ```
+const parentElement = document.getElementById('parentElement');
+parentElement.appendChild(newElement);
+```
 
 Эти методы позволяют создавать новые элементы и добавлять их в структуру DOM, что позволяет динамически изменять содержимое и вид веб-страницы с помощью JavaScript.
 
