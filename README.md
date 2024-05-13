@@ -102,6 +102,14 @@ cd IndivWork3JS
         ```
         const element = document.getElementById('myElementId');
         ```
+      - Использование document.querySelector() и document.querySelectorAll(): Эти методы позволяют выбирать элементы с использованием CSS-селекторов.
+  
+        ```
+        const element = document.querySelector('.myClass'); // выбор по классу
+        const elements = document.querySelectorAll('p'); // выбор всех <p> элементов
+        ```
+        
+      - Использование свойства document для доступа к специальным элементам, например, document.body для доступа к тегу <body>. 
 
 3. Что такое делегирование событий и как оно используется для эффективного управления событиями на элементах DOM?
  
