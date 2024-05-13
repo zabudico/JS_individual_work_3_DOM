@@ -88,7 +88,7 @@ cd IndivWork3JS
 
 ![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/1b6ffa90-9995-45fa-81c7-367c6e891010)
 
-![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/cbe97121-fc91-48a2-a53e-84482536b55f)
+![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/cd71a19d-394d-4509-8f3c-b80c6bafff25)
 
 ![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/b7bffec3-3307-4c64-b2c3-c4b481b5e9c6)
 
