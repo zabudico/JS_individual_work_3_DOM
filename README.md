@@ -113,43 +113,43 @@ cd IndivWork3JS
 
 2. Что такое делегирование событий и как оно используется для эффективного управления событиями на элементах DOM?
  
-      Делегирование событий - это техника, при которой обработчик событий устанавливается на родительский элемент, чтобы управлять событиями, происходящими во вложенных (дочерних) элементах. Это позволяет избежать установки обработчиков на каждый дочерний элемент и эффективно обрабатывать события для большого количества элементов.
+         Делегирование событий - это техника, при которой обработчик событий устанавливается на родительский элемент, чтобы управлять событиями, происходящими во вложенных (дочерних) элементах. Это позволяет избежать установки обработчиков на каждый дочерний элемент и           эффективно обрабатывать события для большого количества элементов.
 
-   Пример использования делегирования событий:
+            Пример использования делегирования событий:
 
-   ```
-   document.addEventListener('click', function(event) {
-    if (event.target && event.target.tagName === 'BUTTON') {
-        console.log('Кликнутая кнопка:', event.target);
-    }
-   });
-   ```
+            ```
+               document.addEventListener('click', function(event) {
+                if (event.target && event.target.tagName === 'BUTTON') {
+                    console.log('Кликнутая кнопка:', event.target);
+                   }
+                });
+            ```
 
 3. Как можно изменить содержимое элемента DOM с помощью JavaScript после его выборки?
 
-      Изменение содержимого элемента DOM можно осуществить с помощью свойства textContent, innerHTML или других свойств элемента.
+            Изменение содержимого элемента DOM можно осуществить с помощью свойства textContent, innerHTML или других свойств элемента.
 
-Пример:
+      Пример:
 
-   ```
-   const element = document.getElementById('myElement');
-   element.textContent = 'Новый текст';
-   element.innerHTML = '<strong>Жирный текст</strong>';
-   ```
+         ```
+            const element = document.getElementById('myElement');
+            element.textContent = 'Новый текст';
+            element.innerHTML = '<strong>Жирный текст</strong>';
+         ```
 
 4. Как можно добавить новый элемент в DOM дерево с помощью JavaScript?
 
-   Для добавления нового элемента в DOM дерево используются методы создания элементов и их добавления в существующую структуру:
+         Для добавления нового элемента в DOM дерево используются методы создания элементов и их добавления в существующую структуру:
 
-Пример:
+         Пример:
 
-```
-const newElement = document.createElement('div');
-newElement.textContent = 'Новый элемент';
+         ```
+            const newElement = document.createElement('div');
+            newElement.textContent = 'Новый элемент';
 
-const parentElement = document.getElementById('parentElement');
-parentElement.appendChild(newElement);
-```
+            const parentElement = document.getElementById('parentElement');
+            parentElement.appendChild(newElement);
+         ```
 
 Эти методы позволяют создавать новые элементы и добавлять их в структуру DOM, что позволяет динамически изменять содержимое и вид веб-страницы с помощью JavaScript.
 
