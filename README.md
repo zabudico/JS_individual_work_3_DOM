@@ -84,6 +84,9 @@ cd IndivWork3JS
 
 ![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/b01bb7a4-f5e9-4c30-818d-77e5f64e0271)
 
+![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/7d46455b-4b4b-4045-a997-5db41795229d)
+
+![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/1b6ffa90-9995-45fa-81c7-367c6e891010)
 
 ## 5.Ответы на контрольные вопросы
 
