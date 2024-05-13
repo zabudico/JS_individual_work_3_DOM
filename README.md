@@ -122,8 +122,7 @@ cd IndivWork3JS
     if (event.target && event.target.tagName === 'BUTTON') {
         console.log('Кликнутая кнопка:', event.target);
     }
-});
-  
+   });
    ```
 
 4. Как можно изменить содержимое элемента DOM с помощью JavaScript после его выборки?
