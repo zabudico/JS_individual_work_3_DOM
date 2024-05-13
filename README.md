@@ -12,7 +12,7 @@ JS interaction with a DOM-tree based web application for personal finance accoun
       - В командной строке перейдите в папку, где вы хотите разместить локальную копию репозитория. Затем выполните команду         git clone с скопированным URL репозитория:
         
 ```  
-git clone <URL репозитория>
+git clone [<URL репозитория>](https://github.com/zabudico/JS_individual_work_3_DOM.git)
 ```
 
 3. Перейдите в каталог проекта.
