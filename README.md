@@ -79,19 +79,22 @@ cd IndivWork3JS
 
 ## 4. Примеры использования проекта
 
-![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/720cc227-5e28-49ee-8aed-a72091425e5e)
+![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/4b9fb2cd-a5f3-4b1d-b828-dbd188d294ec)
 
-![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/294db36b-136a-4c0c-9fe9-624d37c547f4)
+![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/43513db0-294a-43b1-8704-68effbc30590)
 
-![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/b01bb7a4-f5e9-4c30-818d-77e5f64e0271)
+![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/3b6de69f-2416-4681-9ff7-796f981e82cb)
 
-![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/7d46455b-4b4b-4045-a997-5db41795229d)
+![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/a8a26e3f-d86a-4661-af33-04ee92c6652f)
 
-![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/1b6ffa90-9995-45fa-81c7-367c6e891010)
+![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/29387d94-c90d-46f6-875f-cc6ef8b4241f)
 
-![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/cd71a19d-394d-4509-8f3c-b80c6bafff25)
+![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/c867abbe-0587-4237-8bd4-d9a353c1575d)
 
-![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/b7bffec3-3307-4c64-b2c3-c4b481b5e9c6)
+![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/cbf89c2d-936c-4048-a666-63b729b68666)
+
+![image](https://github.com/zabudico/JS_individual_work_3_DOM/assets/112975702/164d5016-be21-4220-b4b5-2c45b9380810)
+
 
 ## 5. Ответы на контрольные вопросы
 
