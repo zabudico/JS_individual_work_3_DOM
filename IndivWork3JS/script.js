@@ -77,10 +77,15 @@ function displayTransaction(transaction) {
 
     // Set row background color based on amount
     if (transaction.amount >= 0) {
-        row.style.backgroundColor = 'lightgreen';
+        row.classList.add('positive');
     } else {
-        row.style.backgroundColor = 'salmon';
+        row.classList.add('negative');
     }
+
+    // Add click event listener to show transaction details
+    row.addEventListener('click', () => {
+        showTransactionDetails(transaction);
+    });
 
     tableBody.appendChild(row);
 }
@@ -115,7 +120,28 @@ function calculateTotal() {
         return total + transaction.amount;
     }, 0);
 
-    document.getElementById('totalAmount').textContent = `Общая сумма: ${totalAmount}`;
+    const totalAmountElement = document.getElementById('totalAmount');
+    totalAmountElement.textContent = `Общая сумма: ${totalAmount}`;
+
+    if (totalAmount < 0) {
+        totalAmountElement.classList.add('negative');
+    } else {
+        totalAmountElement.classList.remove('negative');
+    }
+}
+
+/**
+ * Displays the detailed information of a transaction.
+ * @param {Transaction} transaction - The transaction to show details for.
+ */
+function showTransactionDetails(transaction) {
+    const transactionDetailsDiv = document.getElementById('transactionDetails');
+    transactionDetailsDiv.innerHTML = `
+        <p><strong>ID:</strong> ${transaction.id}</p>
+        <p><strong>Дата и Время:</strong> ${transaction.date}</p>
+        <p><strong>Категория:</strong> ${transaction.category}</p>
+        <p><strong>Описание:</strong> ${transaction.description}</p>
+    `;
 }
 
 // Event listener for form submission
@@ -124,36 +150,3 @@ document.getElementById('transactionForm').addEventListener('submit', addTransac
 // Initialize on page load
 renderTransactions();
 calculateTotal();
-
-
-/**
- * Calculates the total amount of all transactions and updates the displayed total amount.
- * Also applies styles to the total amount element based on its sign.
- */
-function calculateTotal() {
-    /**
-     * Reduces the array of transactions to calculate the total amount.
-     * @param {number} total - The accumulator for the total amount.
-     * @param {Transaction} transaction - The current transaction being processed.
-     * @returns {number} The updated total amount after adding the current transaction's amount.
-     */
-    const totalAmount = transactions.reduce((total, transaction) => {
-        return total + transaction.amount;
-    }, 0);
-
-    /**
-     * The element where the total amount is displayed.
-     * @type {HTMLElement}
-     */
-    const totalAmountElement = document.getElementById('totalAmount');
-
-    // Update the text content of the total amount element
-    totalAmountElement.textContent = `Общая сумма: ${totalAmount}`;
-
-    // Add or remove the 'negative' class based on the sign of the total amount
-    if (totalAmount < 0) {
-        totalAmountElement.classList.add('negative'); // Apply 'negative' class for negative total amount
-    } else {
-        totalAmountElement.classList.remove('negative'); // Remove 'negative' class for non-negative total amount
-    }
-}

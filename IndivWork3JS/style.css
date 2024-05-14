@@ -1,5 +1,10 @@
-/* Стили для формы */
-h1{
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
     text-align: center;
 }
 
@@ -8,7 +13,6 @@ form {
     padding: 20px;
     border-radius: 5px;
     background-color: #f9f9f9;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 400px;
     margin: 0 auto;
@@ -32,7 +36,7 @@ select {
 }
 
 select {
-    height: 38px; /* Ensure select box has same height as other inputs */
+    height: 38px;
 }
 
 button[type="submit"] {
@@ -49,50 +53,22 @@ button[type="submit"]:hover {
     background-color: #45a049;
 }
 
-/* Убираем стандартные браузерные стили для кнопки и инпутов */
-button,
-input[type="submit"],
-input[type="reset"] {
-    -webkit-appearance: none;
-}
-
-/* Отступ между элементами формы */
-form > * {
-    margin-bottom: 10px;
-}
-
-/* Стили для таблицы */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-/* Стили для заголовков таблицы */
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
 th {
     background-color: #f2f2f2;
     color: #333;
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ddd;
 }
 
-/* Стили для строк таблицы */
-td {
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-/* Подсветка строк в зависимости от суммы транзакции */
-tr.positive {
-    background-color: #e7f6e7; /* Зеленый цвет для положительных сумм */
-}
-
-tr.negative {
-    background-color: #fce8e6; /* Красный цвет для отрицательных сумм */
-}
-
-/* Стили для кнопок в ячейках таблицы */
 td button {
     padding: 5px 10px;
     cursor: pointer;
@@ -104,6 +80,23 @@ td button {
 
 td button:hover {
     background-color: #cc0000;
+}
+
+#transactionDetails {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+#totalAmount {
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #dff0d8;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
 }
 
 /* Стили для блока общей суммы */
